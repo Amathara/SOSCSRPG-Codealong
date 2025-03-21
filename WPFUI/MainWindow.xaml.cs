@@ -28,5 +28,9 @@ namespace WPFUI
             DataContext = _gameSession; // What the .xaml file is going to use for its values!!!!!!! DataContext is a built in property.
 
         }
+        private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+        {
+            _gameSession.CurrentPlayer.ExperiencePoints = _gameSession.CurrentPlayer.ExperiencePoints + 10;
+        }
     }
 }
