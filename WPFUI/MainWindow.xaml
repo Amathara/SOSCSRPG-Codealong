@@ -21,30 +21,30 @@
 
         <Grid Grid.Row="1" Grid.Column="0" Background="CornflowerBlue">
             <Grid.RowDefinitions>
-                <RowDefinitions Height="Auto"/>
-                <RowDefinitions Height="Auto"/>
-                <RowDefinitions Height="Auto"/>
-                <RowDefinitions Height="Auto"/>
-                <RowDefinitions Height="Auto"/>
-                <RowDefinitions Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinitions Width="Auto"/>
-                <ColumnDefinitions Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             
             <Label Grid.Row="0" Grid.Column="0" Content="Name:"/>
-            <Label Grid.Row="0" Grid.Column="1" Content="name value"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="{Binding CurrentPlayer.Name}"/>
             <Label Grid.Row="1" Grid.Column="0" Content="Class:"/>
-            <Label Grid.Row="1" Grid.Column="1" Content="class value"/>
-            <Label Grid.Row="2" Grid.Column="0" Content="Hit Points"/>
-            <Label Grid.Row="2" Grid.Column="1" Content="hit points value"/>
-            <Label Grid.Row="3" Grid.Column="0" Content="Gold"/>
-            <Label Grid.Row="3" Grid.Column="1" Content="gold value"/>
-            <Label Grid.Row="4" Grid.Column="0" Content="XP"/>
-            <Label Grid.Row="4" Grid.Column="1" Content="xp value"/>
-            <Label Grid.Row="5" Grid.Column="0" Content="Level"/>
-            <Label Grid.Row="5" Grid.Column="1" Content="level value"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="{Binding CurrentPlayer.CharacterClass}"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Hit Points:"/>
+            <Label Grid.Row="2" Grid.Column="1" Content="{Binding CurrentPlayer.HitPoints}"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Gold:"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="{Binding CurrentPlayer.Gold}"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="XP:"/>
+            <Label Grid.Row="4" Grid.Column="1" Content="{Binding CurrentPlayer.ExperiencePoints}"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Level:"/>
+            <Label Grid.Row="5" Grid.Column="1" Content="{Binding CurrentPlayer.Level}"/>
             
         </Grid>
         <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Ivory"></Label>

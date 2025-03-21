@@ -17,7 +17,12 @@ namespace Engine.ViewModels
             //When we use a single "=" is evaluates what's on on the right side and adds it into what's on the left side.
             CurrentPlayer = new Player();
             CurrentPlayer.Name = "Hilda";
+            CurrentPlayer.CharacterClass = "Rogue";
+            CurrentPlayer.HitPoints = 10;
             CurrentPlayer.Gold = 1000000; //Rich boi
+            CurrentPlayer.ExperiencePoints = 0;
+            CurrentPlayer.Level = 1;
+
         }
     }
 }
