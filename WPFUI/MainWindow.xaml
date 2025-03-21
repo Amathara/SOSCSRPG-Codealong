@@ -17,9 +17,9 @@
             <ColumnDefinition Width="250"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Label Grid.Row="0" Grid.Column="0" Content="Menu" Background="DarkSeaGreen"></Label>
-        <Label Grid.Row="1" Grid.Column="0" Content="Player Data" Background="Cornsilk"></Label>
-        <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Azure"></Label>
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="DarkSeaGreen"></Label>
+        <Label Grid.Row="1" Grid.Column="0" Content="Player Data" Background="CornflowerBlue"></Label>
+        <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Ivory"></Label>
         <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="DarkCyan"></Label>
         <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="Lavender"></Label>
     </Grid>
