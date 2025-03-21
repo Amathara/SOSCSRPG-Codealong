@@ -7,9 +7,9 @@ using Engine.Models;
 
 namespace Engine.ViewModels
 {
-    internal class GameSession
+    public class GameSession
     {
-        Player CurrentPlayer {  get; set; }
+        public Player CurrentPlayer {  get; set; }
 
         public GameSession()
         {
@@ -17,7 +17,7 @@ namespace Engine.ViewModels
             //When we use a single "=" is evaluates what's on on the right side and adds it into what's on the left side.
             CurrentPlayer = new Player();
             CurrentPlayer.Name = "Hilda";
-            CurrentPlayer.Gold = 1000000;
+            CurrentPlayer.Gold = 1000000; //Rich boi
         }
     }
 }

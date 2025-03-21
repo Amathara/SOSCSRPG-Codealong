@@ -18,7 +18,35 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
         <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="Menu" Background="DarkSeaGreen"></Label>
-        <Label Grid.Row="1" Grid.Column="0" Content="Player Data" Background="CornflowerBlue"></Label>
+
+        <Grid Grid.Row="1" Grid.Column="0" Background="CornflowerBlue">
+            <Grid.RowDefinitions>
+                <RowDefinitions Height="Auto"/>
+                <RowDefinitions Height="Auto"/>
+                <RowDefinitions Height="Auto"/>
+                <RowDefinitions Height="Auto"/>
+                <RowDefinitions Height="Auto"/>
+                <RowDefinitions Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinitions Width="Auto"/>
+                <ColumnDefinitions Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <Label Grid.Row="0" Grid.Column="0" Content="Name:"/>
+            <Label Grid.Row="0" Grid.Column="1" Content="name value"/>
+            <Label Grid.Row="1" Grid.Column="0" Content="Class:"/>
+            <Label Grid.Row="1" Grid.Column="1" Content="class value"/>
+            <Label Grid.Row="2" Grid.Column="0" Content="Hit Points"/>
+            <Label Grid.Row="2" Grid.Column="1" Content="hit points value"/>
+            <Label Grid.Row="3" Grid.Column="0" Content="Gold"/>
+            <Label Grid.Row="3" Grid.Column="1" Content="gold value"/>
+            <Label Grid.Row="4" Grid.Column="0" Content="XP"/>
+            <Label Grid.Row="4" Grid.Column="1" Content="xp value"/>
+            <Label Grid.Row="5" Grid.Column="0" Content="Level"/>
+            <Label Grid.Row="5" Grid.Column="1" Content="level value"/>
+            
+        </Grid>
         <Label Grid.Row="1" Grid.Column="1" Content="Game Data" Background="Ivory"></Label>
         <Label Grid.Row="2" Grid.Column="0" Content="Inventory/Quests" Background="DarkCyan"></Label>
         <Label Grid.Row="2" Grid.Column="1" Content="Combat/Movement Controls" Background="Lavender"></Label>
